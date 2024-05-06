@@ -35,6 +35,7 @@ export default function Home() {
          })
         .then((data) => {
             alert("item deleted successfully.")
+            
         })
 
         
