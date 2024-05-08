@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+/*  */
+
+.form-handle{
+  background: linear-gradient(45deg, #fb4db2, #338bff);
+  z-index: -11;
+}
+
+.form{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form-item { 
+  width: 100%;
+  background-color: #cccccc3f;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.61);
+  border: 0.5px solid black;
+  position: relative;
+}
+
+.submit-btn {
+  padding: 2px 2px;
+}
+
+.circle1,
+.circle2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -11;
+}
+
+.input-group{
+  margin: 5px 0;
+}
+
+.input-group label{
+  color: #fff;
+  font-size: 14px;
+}
+
+.input-group input{
+  margin-top: 4px;
+  padding: 5px;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+.submit-btn button{
+  background-color: rgb(0, 84, 218);
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
