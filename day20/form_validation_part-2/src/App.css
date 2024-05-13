@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* section-form */
+
+.section-form {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form-item {
+  background-color: rgb(255, 169, 154);
+  padding: 10px;
+  box-shadow: 2px 2px 3px 3px rgba(128, 128, 128, 0.5);
+}
+
+.input-group {
+  margin: 5px;
+}
+
+.error {
+  color: red;
+}
+
+.submit-btn {
+  margin-top: 10px;
+}
