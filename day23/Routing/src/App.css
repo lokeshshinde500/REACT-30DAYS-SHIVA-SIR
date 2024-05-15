@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+.navbar {
+  background-color: skyblue;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.py {
+  padding: 80px 0;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.d-flex {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+/* Header */
+
+header {
+  background-color: skyblue;
+}
+
+nav ul li a{
+  margin: 10px;
+}
+
+
+/* section-doctors */
+.section-doctors {
+  background-color: rgb(0, 136, 255);
+}
+
+.section-doctors-title h2{
+  margin-bottom: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w-4 {
+  width: 25%;
+}
+
+.card-item {
+  margin: 12px;
+  background-color: skyblue;
+  padding: 10px;
+  border-radius: 2px;
+}
+
