@@ -11,11 +11,15 @@ export default function Navbar() {
                             <Link to="">LOGO</Link>
                         </div>
                         <nav>
-                            <ul className="d-flex">
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                                <li><Link to="/login">Login</Link></li>
-                                <li><Link to="signUp">Sign UP</Link></li>
+                            <ul className="d-flex align-item-center">
+                                <li><Link to="/">HOME</Link></li>
+                                <li><Link to="/about">ABOUT</Link></li>
+                                <div className="login-resister-btn">
+                                    <ul className="d-flex">
+                                        <li><Link className="btn" to="/login">LOGIN</Link></li>
+                                        <li><Link className="btn" to="signUp">SIGN UP</Link></li>
+                                   </ul>
+                                </div>
                             </ul>
                         </nav>
                     </div>
