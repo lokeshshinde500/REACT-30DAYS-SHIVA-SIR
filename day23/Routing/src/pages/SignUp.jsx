@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate,Link } from "react-router-dom"
 
 export default function SignUp() {
 
@@ -40,6 +40,10 @@ export default function SignUp() {
 
                         <div className="submit-btn text-center">
                             <button type="submit">Register</button>
+                        </div>
+
+                        <div className="sign-up-group text-center">
+                            <span>Already registered ? <Link to={"/login"}>sign in</Link></span>
                         </div>
 
                     </form>

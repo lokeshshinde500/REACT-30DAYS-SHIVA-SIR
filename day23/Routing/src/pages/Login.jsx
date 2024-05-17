@@ -1,5 +1,7 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
+import { useContext } from "react"
+
 
 export default function Login() {
 
@@ -15,6 +17,7 @@ export default function Login() {
         if (email === verifyUser.email && password === verifyUser.password) {
 
             alert("Welcome to our website :) ")
+            
             navigate("/")
 
         } else {
@@ -48,6 +51,10 @@ export default function Login() {
 
                         <div className="submit-btn text-center">
                             <button type="submit">sign in</button>
+                        </div>
+
+                        <div className="sign-up-group text-center">
+                            <span>New user ? <Link to={"/signUp"}>sign up</Link></span>
                         </div>
 
                     </form>
