@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*  */
+
+header {
+  background-color: violet;
+  width: 100%;
+  position: absolute;
+}
+
+nav ul li a {
+  margin: 20px;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 3px 6px;
+  background-color: rgb(115, 94, 245);
+  border-radius: 4px;
+  color: #fff;
+  margin: 4px;
+  border: none;
+}
+
+/* section-sign-up */
+
+.section-sign-up,
+.section-sign-in,
+.section-home {
+  height: 100vh;
+  background-color: rgb(219, 185, 219);
+  display: grid;
+  place-items: center;
+}
+
+.sign-up-item,
+.sign-in-item {
+  background-color: violet;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sign-up-title h4,
+.sign-in-title h4 {
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  margin: 4px 0;
+  padding: 2px 4px;
+  width: 100%;
+  outline: none;
+}
+
+.submit-btn button {
+  margin-top: 10px;
+}
