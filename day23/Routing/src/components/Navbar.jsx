@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { authContext } from "../contextProvider/AuthContextProvider";
 
 
 export default function Navbar() {
+    const { logout, isAuth } = useContext(authContext)
     return (
         <>
             <header>
@@ -16,9 +19,12 @@ export default function Navbar() {
                                 <li><Link to="/about">ABOUT</Link></li>
                                 <div className="login-resister-btn">
                                     <ul className="d-flex">
-                                        <li><Link className="btn" to="/login">LOGIN</Link></li>
-                                        <li><Link className="btn" to="signUp">SIGN UP</Link></li>
-                                   </ul>
+                                        {!isAuth && <li><Link className="btn" to="/login">LOGIN</Link></li>}
+                                        {!isAuth && <li><Link className="btn" to="/signUp">SIGN UP</Link></li>}
+                                        {
+                                            isAuth && <li><Link className="btn" onClick={logout} to="login">LOGOUT</Link></li>
+                                        }
+                                    </ul>
                                 </div>
                             </ul>
                         </nav>

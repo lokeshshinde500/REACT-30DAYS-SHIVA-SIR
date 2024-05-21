@@ -171,3 +171,11 @@ input::placeholder {
   font-size: 12px;
   color: slateblue;
 }
+
+/*  */
+.section-about {
+  height: 100vh;
+  background-color: #d2cef0;
+  display: grid;
+  place-items: center;
+}

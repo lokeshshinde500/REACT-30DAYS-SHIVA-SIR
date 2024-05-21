@@ -1,12 +1,14 @@
 import { useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import { useContext } from "react"
+import { authContext } from "../contextProvider/AuthContextProvider"
 
 
 export default function Login() {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const { login } = useContext(authContext)
     const navigate = useNavigate()
 
     function handleSignUp(event) {
@@ -16,9 +18,22 @@ export default function Login() {
 
         if (email === verifyUser.email && password === verifyUser.password) {
 
-            alert("Welcome to our website :) ")
-            
-            navigate("/")
+            fetch("https://reqres.in/api/login", {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify({ email: email, password: password })
+            })
+                .then(res => res.json())
+                .then((data) => {
+                    console.log("token generated : ", data.token)
+                    login(data.token)
+                    alert("Welcome to our website :) ")
+                    navigate("/")
+                })
+
+
 
         } else {
             alert("Invalid Credential :(")
